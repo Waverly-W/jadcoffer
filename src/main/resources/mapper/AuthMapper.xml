@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.waverly.jadcoffer.mapper.AuthMapper">
+    <insert id="insert" parameterType="com.waverly.jadcoffer.pojo.entity.Auth">
+        insert into jadcoffer.auth (user_id, identity_type, identifier, credential, status, expire_time) VALUES
+        (#{userId}, #{identityType}, #{identifier}, #{credential}, #{status}, #{expireTime})
+    </insert>
+    <select id="selectAuthByIdentifier" resultType="com.waverly.jadcoffer.pojo.entity.Auth"
+            parameterType="java.lang.String">
+        select * from jadcoffer.auth where identifier=#{identifier}
+    </select>
+</mapper>
