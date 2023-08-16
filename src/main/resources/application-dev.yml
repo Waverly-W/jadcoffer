@@ -9,8 +9,8 @@ jadcoffer:
   alioss:
     endpoint: oss-cn-shanghai.aliyuncs.com
     bucket-name: fengzi3364
-    access-key-id: LTAI5t8iHExwasdGDVecNcoR
-    access-key-secret: n5DTvAas0f9bIsesDemKMnh1lgY867
+    access-key-id:  
+    access-key-secret:  
   redis:
     host: 127.0.0.1
     port: 6379
